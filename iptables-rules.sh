@@ -23,7 +23,7 @@ addRulesFromFile () {
     echo "OK"
 }
 
-for file in rulesets/*
+for file in `dirname $0`/rulesets/*
 do
     if [[ -f $file ]]; then
         addRulesFromFile $file
