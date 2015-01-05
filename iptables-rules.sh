@@ -23,7 +23,7 @@ addRulesFromFile () {
     echo "OK"
 }
 
-for file in `dirname $0`/rulesets/*
+for file in /etc/iptables-rules/rulesets/*
 do
     if [[ -f $file ]]; then
         addRulesFromFile $file
